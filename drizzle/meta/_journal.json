@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1758273246585,
+      "tag": "0000_perfect_newton_destine",
+      "breakpoints": true
+    }
+  ]
+}
