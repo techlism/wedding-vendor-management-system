@@ -12,7 +12,7 @@ A streamlined web application for wedding vendors to create, manage, and process
 ### Installation
 
 ```bash
-git clone https://github.com/techlism/wedding-vendor-managemnet-system.git
+git clone https://github.com/techlism/wedding-vendor-management-system.git
 cd wedding-vendor-managemnet-system
 npm install
 ```
