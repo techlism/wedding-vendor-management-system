@@ -85,10 +85,8 @@ export const ContractEditor = forwardRef<ContractEditorRef, ContractEditorProps>
                     </Button>
                 </div>
 
-                {/* Simple Toolbar - only basic StarterKit features */}
                 <div className="border rounded-md bg-white">
                     <div className="border-b p-2 flex flex-wrap gap-1">
-                        {/* Undo/Redo */}
                         <button
                             type="button"
                             onClick={() => editor.chain().focus().undo().run()}
@@ -110,7 +108,6 @@ export const ContractEditor = forwardRef<ContractEditorRef, ContractEditorProps>
 
                         <div className="w-px h-6 bg-gray-300 mx-1"></div>
 
-                        {/* Headings */}
                         <button
                             type="button"
                             onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}
@@ -146,7 +143,6 @@ export const ContractEditor = forwardRef<ContractEditorRef, ContractEditorProps>
 
                         <div className="w-px h-6 bg-gray-300 mx-1"></div>
 
-                        {/* Text Formatting */}
                         <button
                             type="button"
                             onClick={() => editor.chain().focus().toggleBold().run()}
@@ -182,7 +178,6 @@ export const ContractEditor = forwardRef<ContractEditorRef, ContractEditorProps>
 
                         <div className="w-px h-6 bg-gray-300 mx-1"></div>
 
-                        {/* Lists and Quote */}
                         <button
                             type="button"
                             onClick={() => editor.chain().focus().toggleBulletList().run()}
@@ -209,13 +204,11 @@ export const ContractEditor = forwardRef<ContractEditorRef, ContractEditorProps>
                         </button>
                     </div>
 
-                    {/* Editor Content */}
                     <div className="relative">
                         <EditorContent editor={editor} />
                     </div>
                 </div>
 
-                {/* Quick Help */}
                 <div className="text-xs text-gray-500 space-y-1">
                     <div className="flex flex-wrap gap-4">
                         <span><strong>Ctrl+B</strong>: Bold</span>
@@ -228,3 +221,5 @@ export const ContractEditor = forwardRef<ContractEditorRef, ContractEditorProps>
         );
     }
 );
+
+ContractEditor.displayName = 'ContractEditor';

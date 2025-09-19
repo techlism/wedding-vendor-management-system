@@ -1,5 +1,5 @@
 import { sql } from 'drizzle-orm';
-import { sqliteTable, text, integer, real } from 'drizzle-orm/sqlite-core';
+import { sqliteTable, text, real } from 'drizzle-orm/sqlite-core';
 import { relations } from 'drizzle-orm';
 
 export const users = sqliteTable('users', {

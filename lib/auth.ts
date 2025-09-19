@@ -1,4 +1,4 @@
-import { SignJWT, jwtVerify } from 'jose';
+import { JWTPayload, SignJWT, jwtVerify } from 'jose';
 import bcrypt from 'bcryptjs';
 import { db } from './db';
 import { users } from './db/schema';
@@ -13,7 +13,7 @@ export interface UserPayload {
     vendorType: string;
 }
 
-export async function signToken(payload: any) {
+export async function signToken(payload: JWTPayload) {
     return await new SignJWT(payload)
         .setProtectedHeader({ alg: 'HS256' })
         .setExpirationTime('24h')

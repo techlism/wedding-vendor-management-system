@@ -5,7 +5,6 @@ import FloatingMenu from '@tiptap/extension-floating-menu';
 import Underline from '@tiptap/extension-underline';
 import Link from '@tiptap/extension-link';
 
-// Streamlined extensions - only essential ones for contract editing
 export const tiptapExtensions = [
     StarterKit.configure({
         bulletList: {
