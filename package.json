@@ -4,14 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "db:push": "drizzle-kit push:sqlite",
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
-    "@libsql/client": "^0.15.15",
+    "@libsql/client": "^0.12.0",
     "@radix-ui/react-slot": "^1.2.3",
     "@tiptap/core": "^3.4.4",
     "@tiptap/extension-placeholder": "^3.4.4",

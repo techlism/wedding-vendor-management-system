@@ -121,7 +121,7 @@ npm run db:studio  # Open database admin
 
 ## Architecture Decisions
 
-**SQLite Database**: Chosen for simplicity and easy deployment without external database dependencies.
+**SQLite Database (Turso)**: Chosen for simplicity and easy deployment without external database dependencies.
 
 **JWT Authentication**: Secure HTTP-only cookies for session management without external auth providers.
 
